@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slide-in {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.5s forwards;
+  }
+  
+  @keyframes balloon-effect {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Kart yukarı çıksın */
+    }
+    100% {
+      transform: translateY(0); /* Kart tekrar aşağı insin */
+    }
+  }
+  
+  .animate-balloon {
+    animation: balloon-effect 0.5s ease-in-out;
+  }
+  

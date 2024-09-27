@@ -152,15 +152,15 @@ const FlyoutLink = ({ title, FlyoutContent }) => {
 // Dropdown content for Eğitimlerimiz
 const EgitimContent = () => (
   <div className="w-48 bg-white p-5 gap-8 shadow-xl rounded-lg">
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/sera-gazı-eğitim" className="block text-sm hover:underline">
       Sera Gazı Doğrulayıcı Eğitimi
     </a>
     <br />
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/kimyasal-degerlendirme-egitim" className="block text-sm hover:underline">
       Kimyasal Değerlendirme Uzmanı Eğitimi
     </a>
     <br />
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/kozmetik-urun-guvenlilik" className="block text-sm hover:underline">
       Kozmetik Ürün Güvenlilik Değerlendirmesi
     </a>
   </div>
@@ -169,11 +169,11 @@ const EgitimContent = () => (
 // Dropdown content for Hizmetler
 const HizmetContent = () => (
   <div className="w-48 bg-white p-5 gap-8 shadow-xl rounded-lg">
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/sera-gazi" className="block text-sm hover:underline">
       Sera Gazı
     </a>
     <br />
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/kimya-sektoru" className="block text-sm hover:underline">
       Kimya Sektörü
     </a>
     <br />

@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import BelgeSorgula from '../components/BelgeSorgula'
 import Yeterliliklerimiz from '../components/Yeterliliklerimiz'
 import TrainingSection from '../components/TrainingSection'
+import CardContainer from '../components/CardContainer'
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
       <br />
       <br />
       <Yeterliliklerimiz/>
+      <br />
+      <br />
+      <CardContainer/>
       <br />
       <br />
       <TrainingSection/>
