@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import "tw-elements";
+
+
 @keyframes slide-in {
     0% {
       transform: translateY(-50px);

@@ -177,16 +177,20 @@ const HizmetContent = () => (
       Kimya Sektörü
     </a>
     <br />
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/ahsap-urun-belgelendirme" className="block text-sm hover:underline">
       Ahşap Ürün Belgelendirme
     </a>
     <br />
-    <a href="#" className="block text-sm hover:underline">
+    <a href="/turk-reach" className="block text-sm hover:underline">
       Türk Reach
     </a>
     <br />
     <a href="#" className="block text-sm hover:underline">
-      İş ve Yönetim Sektörü
+    Çağrı Merkezi Takım Lideri Sınav ve Belgelendirme
+    </a>
+    <br />
+    <a href="#" className="block text-sm hover:underline">
+    Çağrı Merkezi Müşteri Temsilcisi Sınav ve Belgelendirme
     </a>
   </div>
 );

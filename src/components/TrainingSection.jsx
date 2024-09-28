@@ -23,7 +23,7 @@ const TrainingSection = () => {
       <div className="container mx-auto">
         {/* Slider */}
         <Slider {...settings}>
-          <div className="flex flex-row lg:flex-row items-center justify-between px-4">
+          <div className="flex flex-col lg:flex-row items-center px-4">
             {/* Sol taraf (metin) */}
             <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">

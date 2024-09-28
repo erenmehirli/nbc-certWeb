@@ -8,6 +8,8 @@ import KimyasalDegerlendirmeEgitim from "../pages/KimyasalDegerlendirmeEgitimi";
 import KozmetikUrunGuvenlilik from "../pages/KozmatikUrunGuvenlilik";
 import SeraGazi from "../pages/SeraGazi";
 import KimyaSektoru from "../pages/KimyaSektoru";
+import AhsapUrun from "../pages/AhsapUrun";
+import TurkReach from "../pages/TurkReach";
 
 
 
@@ -23,6 +25,9 @@ const RoutePath = () => {
           <Route path='/kozmetik-urun-guvenlilik' element={<KozmetikUrunGuvenlilik />} />
           <Route path='/sera-gazi' element={<SeraGazi />} />
           <Route path='/kimya-sektoru' element={<KimyaSektoru />} />
+          <Route path='/ahsap-urun-belgelendirme' element={<AhsapUrun />} />
+          <Route path='/turk-reach' element={<TurkReach/>} />
+
 
 
 
