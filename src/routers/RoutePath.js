@@ -10,6 +10,7 @@ import SeraGazi from "../pages/SeraGazi";
 import KimyaSektoru from "../pages/KimyaSektoru";
 import AhsapUrun from "../pages/AhsapUrun";
 import TurkReach from "../pages/TurkReach";
+import BelgeDogrulama from "../pages/BelgeDogrulama";
 
 
 
@@ -27,7 +28,7 @@ const RoutePath = () => {
           <Route path='/kimya-sektoru' element={<KimyaSektoru />} />
           <Route path='/ahsap-urun-belgelendirme' element={<AhsapUrun />} />
           <Route path='/turk-reach' element={<TurkReach/>} />
-
+          <Route path='/belge-dogrulama' element={<BelgeDogrulama/>} />
 
 
 

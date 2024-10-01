@@ -1,28 +1,46 @@
 import React from 'react';
 import images from "../assets/images/imagesHero.jpg"; // Görseli import ediyoruz
 import Card from './Cards'; // Kart bileşenini import ediyoruz
+import cardResim from "../assets/images/seragazi_370x210.jpg";
+import cardResim1 from "../assets/images/hakkimizda_kimya.jpg";
+import cardResim2 from "../assets/images/isyonetimi.jpg";
+import cardResim3 from "../assets/images/turkreach.jpg";
+
+
+
+
 
 const Hero = () => {
   // Kart verileri
   const cards = [
     {
-      title: "Sertifikasyon Süreci",
-      description: "Sertifikasyon sürecimizin adımlarını öğrenin.",
-      image: "https://via.placeholder.com/300" // Buraya gerçek görsel URL'lerinizi koyun
+      title: "Sera Gazı",
+      subtitle: "Emisyonları Doğrulama İlkeleri ve Hesaplamaları",
+      description: "Sera Gazı Emisyonları, Sera Gazı Emisyonları İzleme Ve Raporlama İlkeleri, Sera Gazı",
+      image: cardResim 
     },
     {
-      title: "Eğitim Programları",
-      description: "Uzman eğitmenlerimizle eğitim programlarımız hakkında bilgi alın.",
-      image: "https://via.placeholder.com/300"
+      title: "Kimya Sektörü",
+      subtitle: "Kimya Sektörü",
+      description: "Kimyasalların Kaydı Değerlendirmesi İzni ve Kısıtlanması (KKDİK), Kimyasal Değerlendirme Uzmanı (KDU)",
+      image: cardResim1
     },
     {
-      title: "Başvuru Süreci",
-      description: "Başvuru sürecini nasıl başlatacağınızı öğrenin.",
-      image: "https://via.placeholder.com/300"
+      title: "İş ve Yönetim",
+      subtitle: "",
+      description: "Çağrı merkezi çalışanları, anketörler, meslek ve KOBİ danışmanları, kariyer ve yetenek yönetim uzmanları",
+      image: cardResim2
     },
     {
-      title: "Kalite Yönetimi",
-      description: "Kalite yönetimi ve belgelendirme hakkında bilgi alın.",
+      title: "TÜRK REACH",
+      subtitle: "",
+      description: "Registration, Evaluation, Authorisation and Restriction of Chemicals, Kimyasalların Kaydı, Değerlendirilmesi, İzni ve Kısıtlanması ",
+      image: cardResim3
+    },
+    {
+      title: "Ahşap Ürün Belgelendirme",
+      subtitle: "",
+      description: "Ahşap Ürün CE Belgelendirme çalışmaları",
       image: "https://via.placeholder.com/300"
     }
   ];
@@ -32,22 +50,22 @@ const Hero = () => {
       className="relative bg-cover bg-center min-h-screen z-10" 
       style={{ backgroundImage: `url(${images})` }} // Background Image'i doğru şekilde çağırıyoruz
     >
-      {/* Overlay */}
+      {/* Overlay */}  
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      {/* İçerik */}
+      {/* İçerik */}  
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white pb-4 pt-48">
-        {/* Başlık */}
+        {/* Başlık */}  
         <h1 className="text-4xl lg:text-6xl font-bold mb-6">
           Yetkin, Güvenilir, Tarafsız Sertifikasyon
         </h1>
 
-        {/* Açıklama */}
+        {/* Açıklama */}  
         <p className="text-lg lg:text-2xl mb-8 max-w-3xl">
           NBC Sertifikasyon olarak sektördeki uzmanlığımız ve kaliteli hizmet anlayışımızla...
         </p>
 
-        {/* Butonlar */}
+        {/* Butonlar */}  
         <div className="flex space-x-4 mb-10">
           <a
             href="#"
@@ -63,12 +81,13 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Kartlar */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 mt-10">
+        {/* Kartlar */}  
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5  text-black gap-6 px-6 mt-10">
           {cards.map((card, index) => (
             <Card 
               key={index}
               title={card.title}
+              subtitle={card.subtitle}  
               description={card.description}
               image={card.image}
             />
