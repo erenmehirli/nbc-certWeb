@@ -5,7 +5,7 @@ import { FaFilePdf } from 'react-icons/fa';
 import pdf from "../pdf/kimyasaldegerlendirmeuzmani2024.pdf";
 import pdf1 from "../pdf/kduegitimbasvuru.pdf";
 import pdf2 from "../pdf/belgekullanimsozlesmesi2024.pdf";
-
+import banner from '../assets/images/kimys-banner.jpeg';
 
 
 
@@ -126,7 +126,7 @@ const KimyasalDegerlendirmeEgitim = () => {
         id="featured-title"
         className="relative bg-cover bg-center min-h-96 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://nbccert.com.tr/wp-content/uploads/2023/11/seragazi_baslik2.jpg")',
+          backgroundImage: `url(${banner})`,
         }}
       >
         <div className="container mx-auto py-16 h-full flex items-center justify-center">

@@ -50,7 +50,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-6 mt-6 bg-gray-100">
       <div className="container mx-auto px-4">
         {/* Başlık */}
         <h2 className="text-4xl font-bold text-center mb-8 mt-6 text-gray-800">
@@ -166,7 +166,7 @@ const AboutUs = () => {
 
       <img src={bg} alt="" />
 
-      <div className="grid grid-cols-2 items-center text-center px-10 py-10 mx-auto w-2/3 justify-center gap-4">
+      <div className="grid grid-rows-1 md:grid-cols-2 items-center text-center px-10 mx-auto w-2/3 justify-center gap-4">
         {/* Sol Sütun */}
         <div className="flex flex-col justify-center items-center space-y-4">
           <div className="flex flex-col gap-4 p-4 bg-white shadow-lg rounded-lg max-w-sm">

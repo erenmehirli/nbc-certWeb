@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
-import TrainingImage1 from '../assets/images/Yetkilerimiz.png';
-import TrainingImage2 from '../assets/images/Yetkilerimiz2.png';
-import TrainingImage3 from '../assets/images/Yetkilerimiz3.png';
+import kozmetik from '../assets/images/kozmtk.jpg';
+
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
-
+import seragazi from '../assets/images/seragazi_370x210.jpg'
+import kimyasal from '../assets/images/kimyasal due.png'
 const TrainingSection = () => {
   const settings = {
     dots: true,
@@ -20,85 +20,75 @@ const TrainingSection = () => {
 
   return (
     <section className="py-12 rounded-t-xl relative">
-      <div className="container mx-auto">
-        <Slider {...settings}>
-          <div className="flex flex-row items-center justify-center">
-            <div className="flex justify-center">
-              <img
-                src={TrainingImage1}
-                alt="NBC Uygunluk Değerlendirme Eğitim"
-                className="w-auto h-auto rounded-lg"
-              />
-            </div>
-            <div className="mb-8 text-center">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                NBC Uygunluk Değerlendirme Eğitim
-              </h2>
-              <p className="text-gray-600 mb-6">
-                NBC uygunluk değerlendirme eğitimi ile sektördeki deneyiminizi artırın ve kalite yönetim standartlarına uygun yetkinlik kazanın.
-              </p>
-              <a
-                href="#"
-                className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold"
-              >
-                Eğitimlere Katılın
-              </a>
-            </div>
+    <div className="container mx-auto">
+      <Slider {...settings}>
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex justify-center">
+            <img
+              src={seragazi}
+              alt="NBC Uygunluk Değerlendirme Eğitim"
+              className="w-[370px] h-[210px] object-cover rounded-lg" // Sabit genişlik ve yükseklik
+            />
           </div>
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+             Sera Gazı Doğrulayıcı Eğitimi
+            </h2>
+            <a
+              href="/sera-gazı-eğitim"
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold"
+            >
+              Eğitimlere Katılın
+            </a>
+          </div>
+        </div>
 
-          <div className="flex flex-row items-center justify-center">
-            <div className="flex justify-center">
-              <img
-                src={TrainingImage2}
-                alt="ISO 9001 Eğitimleri"
-                className="w-auto h-auto rounded-lg"
-              />
-            </div>
-            <div className="mb-8 text-center">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                ISO 9001 Eğitimleri
-              </h2>
-              <p className="text-gray-600 mb-6">
-                ISO 9001 kalite yönetim sistemleri eğitimimizle yetkinliklerinizi geliştirin.
-              </p>
-              <a
-                href="#"
-                className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold"
-              >
-                Eğitimlere Katılın
-              </a>
-            </div>
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex justify-center">
+            <img
+              src={kimyasal}
+              alt="ISO 9001 Eğitimleri"
+              className="w-[370px] h-[210px] object-cover rounded-lg" // Sabit genişlik ve yükseklik
+            />
           </div>
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Kimyasal Değerlendirme Uzmanı Eğitimi
+            </h2>
+            <a
+              href="/kimyasal-degerlendirme-egitim"
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold"
+            >
+              Eğitimlere Katılın
+            </a>
+          </div>
+        </div>
 
-          <div className="flex flex-row items-center justify-center">
-            <div className="flex justify-center">
-              <img
-                src={TrainingImage3}
-                alt="ISO 17021 Eğitimleri"
-                className="w-auto h-auto rounded-lg"
-              />
-            </div>
-            <div className="mb-8 text-center">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                ISO 17021 Eğitimleri
-              </h2>
-              <p className="text-gray-600 mb-6">
-                ISO 17021 sertifikasyon eğitimi ile kalite yönetim süreçlerinde uzmanlaşın.
-              </p>
-              <a
-                href="#"
-                className="bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-500 transition-colors duration-300 font-semibold"
-              >
-                Eğitimlere Katılın
-              </a>
-            </div>
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex justify-center">
+            <img
+              src={kozmetik}
+              alt="ISO 17021 Eğitimleri"
+              className="w-[370px] h-[210px] object-cover rounded-lg" // Sabit genişlik ve yükseklik
+            />
           </div>
-        </Slider>
-      </div>
-    </section>
-  );
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+             Kozmetik Ürün Güvenlik Değerlendirmesi
+            </h2>
+            <a
+              href="/kozmetik-urun-guvenlilik"
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-gray-500 transition-colors duration-300 font-semibold"
+            >
+              Eğitimlere Katılın
+            </a>
+          </div>
+        </div>
+      </Slider>
+    </div>
+  </section>
+);
 };
-
 const NextArrow = ({ onClick }) => {
   return (
     <div

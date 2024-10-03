@@ -1,11 +1,12 @@
+
 import React from 'react';
 import images from "../assets/images/imagesHero.jpg"; // Görseli import ediyoruz
 import Card from './Cards'; // Kart bileşenini import ediyoruz
 import cardResim from "../assets/images/seragazi_370x210.jpg";
 import cardResim1 from "../assets/images/hakkimizda_kimya.jpg";
 import cardResim2 from "../assets/images/isyonetimi.jpg";
-import cardResim3 from "../assets/images/turkreach.jpg";
-
+import cardResim3 from "../assets/images/Chemical molecule under the microscope_AdobeStock.jpeg";
+import ahsap from '../assets/images/kereste.jpg';
 
 
 
@@ -41,7 +42,7 @@ const Hero = () => {
       title: "Ahşap Ürün Belgelendirme",
       subtitle: "",
       description: "Ahşap Ürün CE Belgelendirme çalışmaları",
-      image: "https://via.placeholder.com/300"
+      image: ahsap 
     }
   ];
 
@@ -74,7 +75,7 @@ const Hero = () => {
             Hemen Başvur
           </a>
           <a
-            href="#"
+            href="/contact"
             className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-black rounded-lg font-semibold transition duration-300"
           >
             Daha Fazla Bilgi

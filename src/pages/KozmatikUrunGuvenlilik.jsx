@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import nbccosc from "../assets/images/nbcosc.png";
-
-
+import banner from '../assets/images/koz-banner.jpeg';
 const KozmetikUrunGuvenlilik = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -135,13 +134,13 @@ const KozmetikUrunGuvenlilik = () => {
         id="featured-title"
         className="relative bg-cover bg-center min-h-96 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://nbccert.com.tr/wp-content/uploads/2023/11/seragazi_baslik2.jpg")',
+          backgroundImage:`url(${banner})` ,
         }}
       >
         <div className="container mx-auto py-16 h-full flex items-center justify-center">
           <div className="inner-wrap text-center text-blue-950">
             <div className="title-group">
-              <h1 className="main-title text-5xl font-bold">
+              <h1 className="main-title text-3xl font-bold">
                 KOZMETİK ÜRÜN GÜVENLİLİK DEĞERLENDİRME EĞİTİMİ
               </h1>
             </div>
@@ -329,13 +328,16 @@ const KozmetikUrunGuvenlilik = () => {
       </div>
 
       {/* Görsel */}
-      <div className=" w-full row-span-1">
-        <img
-          src={nbccosc}
-          alt="Kozmetik Ürün Güvenlilik Değerlendirmesi"
-          className="w-full object-cover"
-        />
-      </div>
+      <div className=" w-screen">
+  <img
+    src={nbccosc}
+    alt="Kozmetik Ürün Güvenlilik Değerlendirmesi"
+    className="w-screen"
+  />
+</div>
+
+
+
 
       {/* Görselin Altındaki Yazı */}
       <div className="px-8 py-6 flex justify-center items-center">

@@ -4,75 +4,65 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from "../assets/images/logo.png";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Navbar = () => {
+
+  const customStyle = {
+    backgroundColor: '#1D3780', // Arka plan rengi
+    color: '#FFFFFF', // Metin rengi
+    padding: '16px',
+  };
+
   return (
     <div>
       {/* Üst bilgi çubuğu */}
       <div className="bg-white text-black py-6 shadow-lg pb-20">
-        {/* Beyaz bölümün height'i büyütüldü */}
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           {/* Logo */}
           <div className="flex-shrink-0 pl-10">
             <a href="/" className="font-bold text-xl text-white">
-              <img
-                src={logo}
-                alt="NBC Sertifikasyon"
-                className="h-10"
-              />
+              <img src={logo} alt="NBC Sertifikasyon" className="h-10" />
             </a>
           </div>
-          <div className="flex justify-between space-x-8">
-            {/* Telefon Bilgisi */}
+
+          {/* Masaüstü: İletişim Bilgileri */}
+          <div className="hidden lg:flex justify-between space-x-8">
             <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 10a9 9 0 0118 0v2a9 9 0 01-18 0v-2zm1 0h4m1 0h8m1 0h4M5 7h14m0 10a9 9 0 01-14 0"
-                />
-              </svg>
+              <LocalPhoneIcon />
               <div>
                 <span className="block font-semibold">Telefon</span>
-                <span className="text-gray-700">+90 (312) 255-5558</span>
+                <span className="text-gray-700 hover:text-blue-500">+90 (312) 255-5558</span>
               </div>
             </div>
-
-            {/* Email Bilgisi */}
             <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M16 12H8M2 5h20v14H2z"
-                />
-              </svg>
+              <MailOutlineIcon />
               <div className="pr-10">
                 <span className="block font-semibold">Email</span>
-                <span className="text-gray-700">info@nbccert.com.tr</span>
+                <span>
+                  <a href="mailto:info@nbccert.com.tr" className="hover:text-blue-500">
+                    info@nbccert.com.tr
+                  </a>
+                </span>
               </div>
+              <a
+                href="/table"
+                className="px-4 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300"
+                style={customStyle}
+              >
+                Eğitim takvimi
+              </a>
             </div>
           </div>
 
-          {/* Sağ taraf: sosyal medya ikonları */}
+     
+          
         </div>
       </div>
 
-      {/* Ana Navbar */}
+      {/* Mobil Menü */}
+      
       
     </div>
   );

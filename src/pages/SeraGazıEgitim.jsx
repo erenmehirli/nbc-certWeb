@@ -6,7 +6,7 @@ import pdf1 from "../pdf/F147_SERA_GAZI_DOGRULAYICI_Sinav_Basvuru_Formu.pdf";
 import pdf2 from "../pdf/F148_SERA_GAZI_DOGRULAYICI_ Egitim_Basvuru_Formu_GHG_VERIFICATION_CERTIFIC_PROGRAM_TRAINING_APPLICATION_FORM_Rev00_15.12.2021.pdf";
 import pdf3 from "../pdf/F149_SERA_GAZI_BAS_DOGRULAYICI_Sinav_Basvuru_Formu.pdf";
 import pdf4 from "../pdf/F150_SERA_GAZI_BAS_DOGRULAYICI_Egitim_Basvuru_Formu.pdf";
-
+import banner from '../assets/images/seragazıbanner.jpeg';
 
 
 const SeraGaziEgitim = () => {
@@ -119,14 +119,14 @@ const SeraGaziEgitim = () => {
         id="featured-title"
         className="relative bg-cover bg-center min-h-96 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://nbccert.com.tr/wp-content/uploads/2023/11/seragazi_baslik2.jpg")',
+          backgroundImage: `url(${banner})` ,
         }}
       >
         <div className="container mx-auto py-16 h-full flex items-center justify-center">
           <div className="inner-wrap text-center text-blue-950">
             {/* Başlık */}
             <div className="title-group">
-              <h1 className="main-title text-5xl font-bold">Sera Gazı</h1>
+              <h1 className="main-title text-3xl font-bold">Sera Gazı Doğrulayıcı Eğitimi</h1>
             </div>
 
             {/* Breadcrumbs */}
@@ -137,7 +137,7 @@ const SeraGaziEgitim = () => {
                     Home
                   </a>
                   <span className="mx-2">/</span>
-                  <span>Sera Gazı</span>
+                  <span>Sera Gazı Doğrulayıcı Eğitimi</span>
                 </div>
               </div>
             </div>

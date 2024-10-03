@@ -8,9 +8,13 @@ import KimyasalDegerlendirmeEgitim from "../pages/KimyasalDegerlendirmeEgitimi";
 import KozmetikUrunGuvenlilik from "../pages/KozmatikUrunGuvenlilik";
 import SeraGazi from "../pages/SeraGazi";
 import KimyaSektoru from "../pages/KimyaSektoru";
-import AhsapUrun from "../pages/AhsapUrun";
 import TurkReach from "../pages/TurkReach";
+import CagrıMerkz from "../pages/CagrıMerkz";
+import EducationTable from "../pages/EducationTable";
+import AhsapUrunBelgelendirme from "../pages/AhsapUrunBelgelendirme";
 import BelgeDogrulama from "../pages/BelgeDogrulama";
+import CagriMerkezi from "../pages/CagriMerkezi";
+
 
 
 
@@ -26,14 +30,12 @@ const RoutePath = () => {
           <Route path='/kozmetik-urun-guvenlilik' element={<KozmetikUrunGuvenlilik />} />
           <Route path='/sera-gazi' element={<SeraGazi />} />
           <Route path='/kimya-sektoru' element={<KimyaSektoru />} />
-          <Route path='/ahsap-urun-belgelendirme' element={<AhsapUrun />} />
-          <Route path='/turk-reach' element={<TurkReach/>} />
-          <Route path='/belge-dogrulama' element={<BelgeDogrulama/>} />
-
-
-
-
-          
+        <Route path = '/turkreach' element={<TurkReach/>} />
+         <Route path='/cagrımerkezi'element={<CagrıMerkz/>} />
+<Route path='/table' element={<EducationTable/>} />
+<Route path="/ahsap" element={<AhsapUrunBelgelendirme/>} />
+<Route path ="/belge-dogrulama" element={<BelgeDogrulama/>} />
+          <Route path='/cagri-merkezi' element={<CagriMerkezi/>} />
 
           
         </Routes>

@@ -11,7 +11,7 @@ const Footer = () => {
   };
   return (
     <footer  style={customStyle}  className=" text-gray-300 py-10">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo ve Sosyal Medya */}
         <div>
           <h2 className="text-white text-xl font-bold mb-4">NBC Sertifikasyon</h2>
@@ -40,19 +40,19 @@ const Footer = () => {
           <h3 className="text-white text-lg font-semibold mb-4">Hakkımızda</h3>
           <ul>
             <li className="mb-2 hover:text-white">
-              <a href="#">Kurumsal</a>
+              <a href="/about-us">Kurumsal</a>
             </li>
             <li className="mb-2 hover:text-white">
-              <a href="#">Kalite Politikamız</a>
+              <a href="/about-us">Kalite Politikamız</a>
             </li>
             <li className="mb-2 hover:text-white">
-              <a href="#">Yönetim Sistemleri</a>
+              <a href="/about-us">Yönetim Sistemleri</a>
             </li>
           </ul>
         </div>
 
         {/* Hizmetlerimiz */}
-        <div className='text-slate-500'>
+        {/* <div className='text-slate-500'>
           <h3 className="text-white text-lg font-semibold mb-4">Hizmetlerimiz</h3>
           <ul>
             <li className="mb-2 hover:text-white">
@@ -62,25 +62,24 @@ const Footer = () => {
               <a href="#">Denetim Hizmetleri</a>
             </li>
             <li className="mb-2 hover:text-white">
-              <a href="#">Eğitimler</a>
+              <a href="/">Eğitimler</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* İletişim */}
         <div className='text-slate-500'>
   <h3 className="text-white text-lg font-semibold mb-4">İletişim</h3>
-  <p className="mb-2 border-b border-gray-700">Adres: Ankara</p>
-  <p className="mb-2 border-b border-gray-700">Telefon: + 90 (312)255-5558</p>
-  <p className="mb-2 border-b border-gray-700">E-posta: info@nbccert.com.tr</p>
+  <p className="mb-2 border-b border-gray-700 hover:text-white">Adres: Ankara, Türkiye</p>
+  <p className="mb-2 border-b border-gray-700 hover:text-white">Telefon: + 90 (312)255-5558</p>
+  <p className="mb-2 border-b border-gray-700 hover:text-white">E-posta: info@nbccert.com.tr</p>
 </div>
 
       </div>
 
       <div className="border-t border-gray-700 mt-8 pt-6 text-center">
         <p className="text-sm">
-        © NBC Uygunluk Değerlendirme Eğitim. 2024, Tüm Hakları Saklıdır.
-        | <a href="#" className="hover:text-white">Gizlilik Politikası</a>
+          © 2024 NBC Sertifikasyon. Tüm hakları saklıdır. | <a href="#" className="hover:text-white">Gizlilik Politikası</a>
         </p>
       </div>
     </footer>
